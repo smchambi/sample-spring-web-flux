@@ -20,7 +20,10 @@ bootJar {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
     implementation 'org.flywaydb:flyway-core'
+    implementation 'org.openjdk.jmh:jmh-core:1.15'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.openjdk.jmh:jmh-generator-annprocess:1.15'
     testImplementation 'io.projectreactor:reactor-test'
 }
 
